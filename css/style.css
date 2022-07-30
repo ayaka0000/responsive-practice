@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* PC-style */
+.Q1_inner,.Q2_inner,.Q3_inner{
+  width: 100%;
+}
+
+/* Q1 */
+.Q1_box{
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+/* Q2 */
+.Q2_box{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+/* Q3 */
+.Q3_inner{
+  display: flex;
+  justify-content: center;
+}
+.Q3_box{
+  width: 300px;
+  height: 300px;
+}
+.Q3_blue_box{
+  background: #0008ff;
+  margin-right: 150px;
+}
+.Q3_green_box{
+  background: #22ff00;
+}
+
+/* Q4 */
+.Q4_inner{
+  width: 600px;
+  margin: 0 auto;
+}
+.Q4_box{
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+.Q4_red_box{
+  background: #ff0000;
+}
+.Q4_blue_box{
+  background: #0008ff;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Q5 */
+.Q5_inner{
+  display: flex;
+  justify-content: center;
+}
+.Q5_box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.Q5_box > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Q5_boxA{
+  background: #ff0000;
+}
+.Q5_boxB{
+  background: #0008ff;
+}
+.Q5_boxC{
+  background: #ff8400;
+}
+
+/* Q6 */
+.Q6_inner{
+  display: flex;
+  justify-content: center;
+}
+.Q6_box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.Q6_box > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Q6_boxA{
+  background: #00ff51;
+}
+.Q6_boxB{
+  background: #d4ff00;
+}
+.Q6_boxC{
+  background: #ff00e1;
+}
+
+/* Q7 */
+.Q7_inner{
+  display: flex;
+  justify-content: center;
+}
+.Q7_box{
+  width: 300px;
+  height: 300px;
+}
+.Q7_red_box{
+  background: #ff0000;
+}
+.Q7_blue_box{
+  background: #0008ff;
+  display: none;
+}
+.Q7_green_box{
+  background: #00ff51;
+}
+
+
+/* SP-style */
+@media screen and (max-width:960px) {
+/* Q1サイズの変更 */
+  .Q1_box{
+    width: 200px;
+    height: 200px;
+  }
+
+/* Q2色変更 */
+  .Q2_box{
+    background: #007bff;
+  }
+
+/* Q3margin値の変更 */
+  .Q3_blue_box{
+    margin-right: 50px;
+  }
+
+/* Q4floatの解除 */
+  .Q4_box{
+    float: none;
+  }
+
+/* Q5flexboxの入れ替え（逆順） */
+  .Q5_inner{
+    flex-direction: row-reverse;
+  }
+
+/* Q6flexboxの入れ替え（指定） */
+  .Q6_boxA{
+    order: 2;
+  }
+  .Q6_boxB{
+    order: 3;
+  }
+  .Q6_boxC{
+    order: 1;
+  }
+
+/* Q7要素の表示・非表示 */
+  .Q7_red_box{
+    display: none;
+  }
+  .Q7_blue_box{
+    display: block;
+  }
+}
+
