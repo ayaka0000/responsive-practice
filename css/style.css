@@ -103,12 +103,15 @@
 }
 .Q6_boxA{
   background: #00ff51;
+  order: 1;
 }
 .Q6_boxB{
   background: #d4ff00;
+  order: 2;
 }
 .Q6_boxC{
   background: #ff00e1;
+  order: 3;
 }
 
 /* Q7 */
